@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenLocationCode">
+      <HintPath>..\..\..\Programming\外部ライブラリ\open-location-code\OpenLocationCode\bin\Debug\netstandard2.0\OpenLocationCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
