@@ -60,7 +60,7 @@ namespace OpenLocationCodeTest
             //GETメソッドで
             using (var httpClient = new HttpClient())
             {
-                var uri = $"https://plus.codes/api?address=WF8Q%2BWF%20Praia,%20Cabo%20Verde&ekey=＜あなたのキー＞";
+                var uri = $"https://plus.codes/api?address=CVW2%2BJFJ%20Niigata,Nagaoka&ekey=＜あなたのキー＞";
 
                 var responseString = httpClient.GetAsync(uri).Result.Content.ReadAsStringAsync().Result;
 
@@ -73,7 +73,7 @@ namespace OpenLocationCodeTest
                 var httpRequest = new FormUrlEncodedContent(
                     new Dictionary<string, string>()
                     {
-                        {"address","WF8Q+WF Praia, Cabo Verde" },
+                        {"address","CVW2+JFJ Niigata,Nagaoka" },
                         {"ekey","＜あなたのキー＞" },
                     }
                 );
